@@ -1,0 +1,33 @@
+@import url('./reset.css');
+@import url('./base.css');
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.loader {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
